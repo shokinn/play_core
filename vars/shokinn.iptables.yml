@@ -1,0 +1,12 @@
+---
+# ansible-role-iptables configuration
+firewall_state: started
+firewall_enabled_at_boot: true
+firewall_allow_incoming_icmp: false
+firewall_allow_ntp: true
+firewall_log_dropped_packets: true
+firewall_input_filter_policy: DROP
+firewall_forward_filter_policy: DROP
+firewall_output_filter_policy: ACCEPT
+firewall_disable_firewalld: true
+firewall_disable_ufw: true

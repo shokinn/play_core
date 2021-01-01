@@ -1,0 +1,10 @@
+.idea
+*.retry
+*/*.retry
+**/*.retry
+*.swp
+*/*.swp
+**/*.swp
+**/backup/*
+playbooks/**
+!playbooks/.gitkeep

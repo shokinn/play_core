@@ -1,0 +1,23 @@
+---
+roles:
+  - src: geerlingguy.pip
+  # - src: nginxinc.nginx
+  # - src: stefangweichinger.rclone
+  # - src: geerlingguy.postgresql
+  # - name: geerlingguy.postgresql
+  #   version: patch
+  #   src: https://github.com/renannprado/ansible-role-postgresql.git
+  - src: geerlingguy.docker
+  # - src: geerlingguy.git
+  # - src: geerlingguy.ansible
+  # - src: geerlingguy.nodejs
+  # - src: paulfantom.restic
+  # - src: dev-sec.nginx-hardening
+  - src: clutterbox.dehydrated
+  - src: cloudalchemy.node-exporter
+
+collections:
+  - name: community.general
+#  - name: debops.debops
+#    version: 1.2.0
+#    source: https://galaxy.ansible.com
