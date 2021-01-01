@@ -8,3 +8,7 @@
 **/backup/*
 playbooks/**
 !playbooks/.gitkeep
+roles/**
+!roles/.gitkeep
+library/**
+!library/.gitkeep
