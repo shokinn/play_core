@@ -58,9 +58,7 @@ Usage:
 [playbook/plabook.yml]->[app.role]
 ```
 
-## Naming scheme
-
-### Roles
+## Role naming scheme
 
 ```
           Role which will install/configure a/n program/app.
