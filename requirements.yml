@@ -13,7 +13,7 @@ roles:
   # - src: geerlingguy.nodejs
   # - src: paulfantom.restic
   # - src: dev-sec.nginx-hardening
-  - src: clutterbox.dehydrated
+  # - src: clutterbox.dehydrated
   - src: cloudalchemy.node-exporter
 
 collections:
