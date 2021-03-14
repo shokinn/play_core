@@ -14,7 +14,7 @@ roles:
   # - src: paulfantom.restic
   # - src: dev-sec.nginx-hardening
   # - src: clutterbox.dehydrated
-  - src: cloudalchemy.node-exporter
+  - src: cloudalchemy.node_exporter
 
 collections:
   - name: community.general
