@@ -14,3 +14,4 @@ library/**
 !library/.gitkeep
 vars/**
 !vars/.gitkeep
+.cache/**
