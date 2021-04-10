@@ -18,6 +18,7 @@ roles:
 
 collections:
   - name: community.general
+  - name: community.docker
 #  - name: debops.debops
 #    version: 1.2.0
 #    source: https://galaxy.ansible.com
