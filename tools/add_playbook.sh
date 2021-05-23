@@ -92,5 +92,5 @@ EOF
 fi
 
 [[ ! -d ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/roles ]] && ln -s ../../roles ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/
-[[ ! -d ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/vars ]] && ln -s ../../vars ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/
+[[ ! -d ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/vars ]] && ln -s ../../play_core/vars ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/
 [[ ! -d ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/library ]] && ln -s ../../library ${SCRIPTPATH}/../playbooks/${PLAYBOOK}/
