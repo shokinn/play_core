@@ -86,14 +86,14 @@ ansible-vault encrypt <file>
 
 ```yaml
 - name: debug
-  debug:
+  ansible.builtin.debug:
     var: variable_to_debug
 ```
 
 ### End playbook here
 
 ```yml
-- meta: end_play
+- ansible.builtin.meta: end_play
 ```
 
 ### pre requiements
