@@ -9,4 +9,4 @@ while ( [ -z ${secret} ] || [ -z ${secret_confirm} ] ) || [ "${secret}" != "${se
 	read -r -s -p "Confirm secret: " secret_confirm; echo ""
 done
 
-ansible-vault encrypt_string --vault-id @prompt "${secret}" --name "${variable_name}"
+ansible-vault encrypt_string --vault-id @prompt --encrypt-vault-id prompt "${secret}" --name "${variable_name}"
