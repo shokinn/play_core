@@ -53,7 +53,7 @@ EOF
   roles:
     # Set this role to you needs.
     # (Meta) base roles can be found in the roles directory
-    # - { role: shokinn.base_<meta base role>, tags: [ system, base ] }
+    # - { role: shokinn.system.ubuntu.base.git, tags: [ system, base ] }
   vars:
     ansible_user: "{{ bootstrap_user }}"
   #   ansible_ssh_pass: "{{ bootstrap_password }}"
@@ -66,7 +66,7 @@ EOF
   roles:
     # Set this role to you needs.
     # (Meta) base roles can be found in the roles directory
-    # - { role: shokinn.base_<meta base role>, tags: [ system, base ] }
+    # - { role: shokinn.system.ubuntu.base.git, tags: [ system, base ] }
 
 - import_playbook: playbook.yml
 EOF
