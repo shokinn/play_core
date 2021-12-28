@@ -25,6 +25,11 @@ if [[ $# -gt 0 ]]; then
 		shift # past argument
 		shift # past value
 		;;
+		-a|--ask-become-pass)
+		BECOME="--ask-become-pass"
+		shift # past argument
+		shift # past value
+		;;
 		-s|--skip-tags)
 		SKIP_TAGS_ARG="$2"
 		shift # past argument
@@ -75,6 +80,8 @@ else
 	echo "			e.g.: \"-l host0,host1,group0,group1\""
 	echo "	-p,	--playbook"
 	echo "			Path to playbook directory, relative to repo root"
+	echo "	-a, --ask-become-pass"
+	echo "			Ask for sudo password if required"
 	echo "	-s,	--skip-tags"
 	echo "			Skip specific tags during playbook execution"
 	echo "			e.g.: \"-s tag0,tag1,tagN\""
@@ -102,7 +109,7 @@ if [[ -f "${SCRIPTPATH}/../requirements.yml" ]] && [[ "${REQUIREMENTS}" == "YES"
 	ansible-galaxy collection install --force -r "${SCRIPTPATH}/../requirements.yml"
 fi
 
-# Run limiter
+# Run playbook
 if [[ ${BOOTSTRAP} == "YES" ]]; then
 	echo -e "#\n# Bootstrap Server"
 	PLAY="bootstrap.yml"
@@ -127,4 +134,4 @@ if [[ -n ${TAGS_ARG} ]]; then
 fi
 
 # Run playbook
-env ANSIBLE_NOCOWS=1 ANSIBLE_LIBRARY=./library ansible-playbook --vault-id @prompt -i ${inventory} ${LIMIT} ${SKIP_TAGS} ${TAGS} ${VERBOSE} ${playbook_path}/${PLAY}
+env ANSIBLE_NOCOWS=1 ANSIBLE_LIBRARY=./library ansible-playbook --vault-id @prompt -i ${inventory} ${LIMIT} ${SKIP_TAGS} ${TAGS} ${VERBOSE} ${BECOME} ${playbook_path}/${PLAY}
