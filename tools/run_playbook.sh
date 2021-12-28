@@ -28,7 +28,6 @@ if [[ $# -gt 0 ]]; then
 		-a|--ask-become-pass)
 		BECOME="--ask-become-pass"
 		shift # past argument
-		shift # past value
 		;;
 		-s|--skip-tags)
 		SKIP_TAGS_ARG="$2"
