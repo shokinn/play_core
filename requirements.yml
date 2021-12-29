@@ -1,20 +1,53 @@
 ---
 roles:
+  - src: cloudalchemy.node_exporter
+  - name: clutterbox.dehydrated.git
+    scm: git
+    src: git+https://github.com/shokinn/ansible-dehydrated.git
+    version: 'main'
   - src: geerlingguy.pip
-  # - src: nginxinc.nginx
-  # - src: stefangweichinger.rclone
+  - src: geerlingguy.docker
+  - name: nginxinc.nginx.git
+    scm: git
+    src: git+https://github.com/nginxinc/ansible-role-nginx.git
+    version: '0.22.0'
+  - name: nginxinc.nginx_config.git
+    scm: git
+    src: git+https://github.com/nginxinc/ansible-role-nginx-config.git
+    version: '0.4.2'
+  - name: shokinn.app.config.docker.git
+    scm: git
+    src: git+https://github.com/shokinn/shokinn.app.config.docker.git
+    version: 'main'
+  - name: shokinn.system.dhparam.git
+    scm: git
+    src: git+https://github.com/shokinn/shokinn.system.dhparam.git
+    version: 'main'
+  - name: shokinn.system.ubuntu.base.git
+    scm: git
+    src: git+https://github.com/shokinn/shokinn.system.ubuntu.base.git
+    version: 'main'
+  - name: shokinn.system.ubuntu.livepatch.git
+    scm: git
+    src: git+https://github.com/shokinn/shokinn.system.ubuntu.livepatch.git
+    version: 'main'
+  - name: stefangweichinger.rclone.git
+    scm: git
+    src: git+https://github.com/stefangweichinger/ansible-rclone.git
+    version: 'master'
+  # - name: 
+  #   scm: git
+  #   src: git+https://
+  #   version: ''
   # - src: geerlingguy.postgresql
   # - name: geerlingguy.postgresql
   #   version: patch
   #   src: https://github.com/renannprado/ansible-role-postgresql.git
-  - src: geerlingguy.docker
   # - src: geerlingguy.git
   # - src: geerlingguy.ansible
   # - src: geerlingguy.nodejs
   # - src: paulfantom.restic
   # - src: dev-sec.nginx-hardening
-  # - src: clutterbox.dehydrated
-  - src: cloudalchemy.node_exporter
 
 collections:
   - name: community.general
