@@ -7,6 +7,7 @@ roles:
     version: 'main'
   - src: geerlingguy.pip
   - src: geerlingguy.docker
+  - src: ipr-cnrs.nftables
   - name: nginxinc.nginx.git
     scm: git
     src: git+https://github.com/nginxinc/ansible-role-nginx.git

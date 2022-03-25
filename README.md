@@ -93,7 +93,8 @@ ansible-vault encrypt <file>
 ### End playbook here
 
 ```yml
-- ansible.builtin.meta: end_play
+- name: End playbook here
+  ansible.builtin.meta: end_play
 ```
 
 ### pre requiements
