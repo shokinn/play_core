@@ -35,7 +35,7 @@ roles:
   - name: stefangweichinger.rclone.git
     scm: git
     src: git+https://github.com/stefangweichinger/ansible-rclone.git
-    version: 'master'
+    version: 'main'
   # - name: 
   #   scm: git
   #   src: git+https://
